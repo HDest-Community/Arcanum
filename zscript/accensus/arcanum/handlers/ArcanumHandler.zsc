@@ -1,31 +1,5 @@
 class ArcanumHandler : EventHandler
 {
-	override void CheckReplacement(ReplaceEvent e)
-	{
-		if (!e.Replacement)
-		{
-			return;
-		}
-
-		switch (e.Replacement.GetClassName())
-		{
-			case 'Lumberjack':
-				if (random[arcanrand]() <= 64)
-				{
-					e.Replacement = 'HDArcanumTome';
-				}
-				break;
-			case 'HDBarrel':
-			{
-				if (random[arcanrand]() <= AceCore.GetScaledChance(4, 16, acl_spawnscale_min, acl_spawnscale_max))
-				{
-					e.Replacement = 'ManaBarrel';
-				}
-				break;
-			}
-		}
-	}
-
 	override void PlayerEntered(PlayerEvent e)
 	{
 		ArcanumSpellBrain brain = ArcanumSpellBrain.Get(e.PlayerNumber);
