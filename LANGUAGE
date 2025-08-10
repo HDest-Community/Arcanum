@@ -1,0 +1,6 @@
+[enu default]
+
+// Merchant Store Entries
+MERCH_CAT_ARCANUM    = "AceCorp";
+MERCH_TAG_ARCANUM    = "Arcanum Tome";
+MERCH_FLAVOR_ARCANUM = "I don't understand a damn thing that's written in it.";
