@@ -70,7 +70,7 @@ class RevitalizationSigil : ArcanumSigil
 	private void DoHealing(Actor a)
 	{
 		PlayCastSound(self, "Arcanum/Restoration/Revitalization");
-		a.A_GiveInventory("RevitalizationEffect");
+		HDF.give(a, "RevitalizationEffect");
 		let effect = RevitalizationEffect(a.FindInventory("RevitalizationEffect"));
 		effect.TotalHealth = int(200 + 800 * ExperienceFactor);
 		effect.HealthPerBeat = int(1 + 2 * ExperienceFactor);

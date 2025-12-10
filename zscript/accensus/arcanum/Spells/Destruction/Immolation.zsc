@@ -31,7 +31,7 @@ class ImmolationSigil : ArcanumSigil
 				HasPlayedSound = true;
 			}
 
-			it.thing.A_GiveInventory("Heat", 2000);
+			HDF.give(it.thing, "Heat", 2000);
 		}
 	}
 

@@ -38,7 +38,7 @@ class SoulGuardSigil : ArcanumSigil
 	private void GiveSpiritualArmor(HDPlayerPawn plr)
 	{
 		PlayCastSound(self, "Arcanum/Restoration/SoulGuard");
-		plr.A_GiveInventory("ShieldCore", int(1 + 2 * ExperienceFactor));
+		HDF.give(plr, "ShieldCore", int(1 + 2 * ExperienceFactor));
 	}
 
 	override void InitRuneSlots()

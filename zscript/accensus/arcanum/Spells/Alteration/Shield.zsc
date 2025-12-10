@@ -62,7 +62,7 @@ class ShieldSigil : ArcanumSigil
 			sv.z += trgt.height / 2;
 			Spark.vel = (sv / 50.0);
 		}
-		trgt.A_GiveInventory("ArcanumShield");
+		HDF.give(trgt, "ArcanumShield");
 		let shield = ArcanumShield(trgt.FindInventory("ArcanumShield"));
 		int amt = int(1000 + 9000 * ExperienceFactor);
 		shield.Stamina = amt * 2;
@@ -115,7 +115,7 @@ class ArcanumShield : HDMagicShield
 			return;
 		}
 
-		owner.A_GiveInventory('HDFireDouse', 3);
+		HDF.give(owner, 'HDFireDouse', 3);
 	}
 
 	Default

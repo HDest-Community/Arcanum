@@ -41,7 +41,7 @@ class HasteSigil : ArcanumSigil
 			let plr = players[i].mo;
 			if (plr && Distance3D(plr) <= HDCONST_ONEMETRE * 20 && CheckSight(plr))
 			{
-				plr.A_GiveInventory("HasteEffect");
+				HDF.give(plr, "HasteEffect");
 				let effect = HasteEffect(plr.FindInventory("HasteEffect"));
 				effect.SpeedFactor = 0.75 + 0.50 * ExperienceFactor;
 				effect.DistanceLeft = 2500 + 7500 * ExperienceFactor;

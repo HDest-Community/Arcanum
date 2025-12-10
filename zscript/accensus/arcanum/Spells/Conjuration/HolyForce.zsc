@@ -38,7 +38,7 @@ class HolyForceSigil : ArcanumSigil
 			}
 
 			TryPlaySound();
-			a.A_GiveInventory("HolyCompeller");
+			HDF.give(a, "HolyCompeller");
 			hasForcedArchvile = true;
 		}
 

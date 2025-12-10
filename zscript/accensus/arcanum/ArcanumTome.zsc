@@ -258,7 +258,7 @@ class HDArcanumTome : HDWeapon
 		let plr = HDPlayerPawn(other);
 		if (plr && BluesToGive > 0)
 		{
-			plr.A_GiveInventory('HealingMagic', BluesToGive);
+			HDF.give(plr, 'HealingMagic', BluesToGive);
 			BluesToGive = 0;
 		}
 
