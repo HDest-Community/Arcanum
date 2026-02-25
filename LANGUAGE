@@ -166,3 +166,9 @@ CONJURATION_GUARDIANORB_INFO = "Self, Targeted, Touch";
 CONJURATION_HOLYFORCE_NAME = "Holy Force";
 CONJURATION_HOLYFORCE_DESC = "Prevents all archviles within 20m from disappearing until they die. Forces it out of hiding if it's invisible. If no archviles were affected, trigger nearby curses, if any. Reveals possessed barrels.";
 CONJURATION_HOLYFORCE_INFO = "Mass";
+
+
+// Merchant Store Entries
+MERCH_CAT_ARCANUM    = "AceCorp";
+MERCH_TAG_ARCANUM    = "Arcanum Tome";
+MERCH_FLAVOR_ARCANUM = "I don't understand a damn thing that's written in it.";

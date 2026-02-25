@@ -1,5 +1,5 @@
 # Arcanum
-_Originally made by Accensus, now maintained by the community.  Requires [AceCoreLib](https://github.com/HDest-Community/AceCoreLib)_
+_Originally made by Accensus, now maintained by the community.  Requires [HDCoreLib](https://github.com/HDest-Community/hdest-core-lib)_
 
 A magic addon for the Classic Doom gameplay mod: Hideous Destructor.
 

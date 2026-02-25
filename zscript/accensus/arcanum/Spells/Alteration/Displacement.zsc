@@ -16,7 +16,7 @@ class DisplacementSigil : ArcanumSigil
 	override void ActivateSelfOrMass()
 	{
 		PlayCastSound(self, "Arcanum/Alteration/Displacement/Start");
-		master.A_GiveInventory("DisplacementSpellPower");
+		HDF.give(master, "DisplacementSpellPower");
 	}
 
 	override void InitRuneSlots()

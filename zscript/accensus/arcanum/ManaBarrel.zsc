@@ -68,7 +68,7 @@ class ManaBarrel : Actor
 			double maxSipFac = HDPlayerPawn(user) && HDPlayerPawn(user).incapacitated > 0 ? 0.9 : 0.8;
 			if (ManaLeft >= TotalMana * maxSipFac)
 			{
-				user.A_GiveInventory('HealingMagic', HDHM_MOUTH);
+				HDF.give(user, 'HealingMagic', HDHM_MOUTH);
 				user.A_Log(Stringtable.Localize("$MANABARREL_SIP"), true);
 				user.A_StartSound("potion/chug", 15);
 				ManaLeft--;

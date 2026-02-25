@@ -1,4 +1,4 @@
-version "4.5"
+version "4.14"
 
 #include "zscript/accensus/arcanum/Spells/Destruction/Fireball.zsc"
 #include "zscript/accensus/arcanum/Spells/Destruction/Claymore.zsc"
@@ -39,12 +39,3 @@ version "4.5"
 #include "zscript/accensus/arcanum/ManaBarrel.zsc"
 
 #include "zscript/accensus/arcanum/handlers/ArcanumHandler.zsc"
-
-// --------------------------------------------------
-// DEBUG & MISC
-// --------------------------------------------------
-
-class ArcanumMath
-{
-	const Pi = 3.14159;
-}

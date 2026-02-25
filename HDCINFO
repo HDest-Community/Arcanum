@@ -1,0 +1,14 @@
+// Arcanum Tome Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "ChainsawReplaces", "name": "HDArcanumTome", "weight": "0.015625", "persists": "true" }
+
+// Mana Barrel Spawn Entries
+addSpawnTableSingleEntry => { "tableName": "ExplosiveBarrelReplaces", "name": "ManaBarrel", "weight": "@Lerp", "weight.min": "0.015625", "weight.max": "0.0625", "weight.ratio": "@Clamp", "weight.ratio.value": "@Divide", "weight.ratio.value.valueA": "@Clamp", "weight.ratio.value.valueA.value": "@GameStat", "weight.ratio.value.valueA.value.key": "levels.completed", "weight.ratio.value.valueA.min": "#acl_spawnscale_min", "weight.ratio.value.valueA.max": "#acl_spawnscale_max", "weight.ratio.value.valueB": "@Max", "weight.ratio.value.valueB.valueA": "#acl_spawnscale_max", "weight.ratio.value.valueB.valueB": "1", "weight.ratio.min": "0", "weight.ratio.max": "1", "persists": "true" }
+
+// Backpack Spawn Pool Filters
+addBPSpawnPoolFilter => { "name": "HDArcanumTome", "allowed": "#arcanum_allowBackpacks" }
+
+// AceCorp Weapon Crate Spawn Pool Filters
+addWeaponCrateFilter => { "name": "HDArcanumTome", "allowed": "#arcanum_allowBackpacks" }
+
+// Merchant Store Entries
+newMerchantStoreItem => { "enabled": "#hdm_enable_arcanum", "type": "weapon", "category": "$MERCH_CAT_ARCANUM", "item": "HDArcanumTome", "icon": "ARCTZ0", "displayName": "$MERCH_TAG_ARCANUM", "basePrice": "700", "flavorText": "$MERCH_FLAVOR_ARCANUM" }
