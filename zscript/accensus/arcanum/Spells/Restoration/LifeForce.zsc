@@ -54,8 +54,21 @@ class LifeForceSigil : ArcanumSigil
 			PlayCastSound(self, "Arcanum/Restoration/LifeForce");
 			
 			//plr.unstablewoundcount = 0;
-			plr.oldwoundcount = 0;
+			//plr.oldwoundcount = 0;
 			//plr.woundcount = 0;
+			HDBleedingWound bldw=null;
+			thinkeriterator bldit=thinkeriterator.create("HDBleedingWound");
+			while(bldw=HDBleedingWound(bldit.next())){
+			if(
+				bldw
+				&&bldw.bleeder==plr
+			){
+				bldw.depth=0;
+				bldw.width=0;
+				bldw.patched=0;
+				bldw.healing=0;
+			}
+		}
 			plr.burncount -= burnFix;
 			plr.aggravateddamage -= aggroFix;
 			plr.bloodloss = 0;
